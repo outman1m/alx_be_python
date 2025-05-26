@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+<<<<<<< HEAD
 weather = input("What's the weather like today? (sunny/rainy/cold):").lower().strip()
 
 if weather == "sunny":
@@ -9,3 +10,15 @@ elif weather == "cold":
     print("Make sure to wear a warm coat and a scarf.")
 else:
     print("Sorry, I don't have recommendations for this weather.")
+=======
+weather = input("What's the weather like today? (sunny/rainy/cold): ").lower().strip()
+
+if weather == "sunny":
+    print("Wear a t-shirt and sunglasses")
+elif weather == "rainy":
+    print("Don't forget your umbrella and a raincoat")
+elif weather == "cold":
+    print("Make sure to wear a warm coat and a scarf")
+else:
+    print("Sorry, I don't have recommendations for this weather")
+>>>>>>> fea75129d4f4dd7c667fed5fd3590fd3f3312a7c
