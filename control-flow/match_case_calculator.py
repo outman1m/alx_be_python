@@ -1,5 +1,3 @@
-#!/usr/bin/python3
-# Using if/elif because Python 3.8 doesn't support match case (needs 3.10+)
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
 operation = input("Choose the operation (+, -, *, /): ").strip()
