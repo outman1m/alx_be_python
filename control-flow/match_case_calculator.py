@@ -1,26 +1,27 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
+
 def simple_calculator():
     print("Simple Calculator")
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
     operation = input("Choose the operation (+, -, *, /): ")
-    if operation == "+":
+    
+    if operation == '+':
         result = num1 + num2
-        print(f"The result is {result}")
-    elif operation == "-":
+    elif operation == '-':
         result = num1 - num2
-        print(f"The result is {result}")
-    elif operation == "*":
+    elif operation == '*':
         result = num1 * num2
-        print(f"The result is {result}")
-    elif operation == "/":
+    elif operation == '/':
         if num2 == 0:
-            print("Cannot divide by zero.")
-        else:
-            result = num1 / num2
-            print(f"The result is {result}")
+            print('Cannot divide by zero')
+            exit()
+        result = num1 / num2
     else:
-        print("Invalid operation. Please choose from +, -, *, /")
+        print('Invalid operation')
+        exit()
+
+    print(f"The result is {result}")
 
 if __name__ == "__main__":
     simple_calculator()
