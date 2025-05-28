@@ -1,7 +1,8 @@
 #!/usr/bin/python3
+# Note: Using if/elif because Python version < 3.10 (match case not supported)
 num1 = float(input("Enter the first number: "))
 num2 = float(input("Enter the second number: "))
-operation = input("Choose the operation (+, -, *, /): ")
+operation = input("Choose the operation (+, -, *, /): ").strip()
 
 if operation == "+":
     result = num1 + num2
