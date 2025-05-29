@@ -5,7 +5,7 @@ def daily_reminder():
     priority = input("Priority (high/medium/low): ").lower()
     time_bound = input("Is it time-bound? (yes/no): ").lower()
 
-    # ===== Match-Case Section (Explicit for Tests) =====
+    # Match-Case Section
     match priority:
         case 'high':
             if time_bound == 'yes':
@@ -24,9 +24,9 @@ def daily_reminder():
                 reminder = f"Note: '{task}' is a LOW priority task. Consider completing it when you have free time."
         case _:
             reminder = "Invalid priority level. Please use high/medium/low."
-    # ===== End Match-Case Section =====
 
-    print("\n" + reminder)
+    
+    print(reminder)
 
 if __name__ == "__main__":
     daily_reminder()
