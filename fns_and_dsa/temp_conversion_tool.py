@@ -18,11 +18,9 @@ def main():
     print("Temperature Conversion Tool")
     
     try:
-        # Get temperature input
         temp_input = input("Enter the temperature to convert: ")
         temperature = float(temp_input)
         
-        # Get unit input
         unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").upper()
         
         if unit == 'F':
