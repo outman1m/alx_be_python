@@ -14,19 +14,19 @@ def convert_to_fahrenheit(celsius):
 def main():
     print("Temperature Conversion Tool")
     try:
-        temp = float(input("Enter temperature: "))
-        unit = input("Celsius or Fahrenheit? (C/F): ").upper()
+        temp = float(input("Enter the temperature to convert: "))
+        unit = input("Is this temperature in Celsius or Fahrenheit? (C/F): ").upper()
         
         if unit == 'F':
             result = (temp - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
-            print(f"{temp}°F = {result:.2f}°C")
+            print(f"{temp}°F is {result:.2f}°C")
         elif unit == 'C':
             result = temp * CELSIUS_TO_FAHRENHEIT_FACTOR + 32
-            print(f"{temp}°C = {result:.2f}°F")
+            print(f"{temp}°C is {result:.2f}°F")
         else:
-            print("Error: Please enter C or F")
+            print("Error: Invalid unit. Please enter 'C' or 'F'.")
     except ValueError:
-        print("Error: Invalid number")
+        print("Error: Invalid temperature. Please enter a numeric value.")
 
 if __name__ == "__main__":
     main()
