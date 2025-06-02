@@ -18,9 +18,11 @@ def main():
         unit = input("Celsius or Fahrenheit? (C/F): ").upper()
         
         if unit == 'F':
-            print(f"{temp}°F = {convert_to_celsius(temp):.2f}°C")
+            result = (temp - 32) * FAHRENHEIT_TO_CELSIUS_FACTOR
+            print(f"{temp}°F = {result:.2f}°C")
         elif unit == 'C':
-            print(f"{temp}°C = {convert_to_fahrenheit(temp):.2f}°F")
+            result = temp * CELSIUS_TO_FAHRENHEIT_FACTOR + 32
+            print(f"{temp}°C = {result:.2f}°F")
         else:
             print("Error: Please enter C or F")
     except ValueError:
